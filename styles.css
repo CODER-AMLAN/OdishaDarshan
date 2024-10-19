@@ -1,10 +1,15 @@
 body {
     background-color: rgb(232, 203, 167);
+    overflow-x: hidden;
 }
 
 .welcome {
     z-index: 3;
     position: absolute;
+}
+
+main {
+    position: relative;
 }
 
 .logo {
@@ -26,8 +31,11 @@ header {
     padding: 10px;
     z-index: 4;
     width: 100%;
+    top: 0;
+    left: 0;
     box-shadow: 0 10px 90px 20px rgba(27, 27, 27, 0.995);
     position: fixed;
+
 }
 
 header a {
@@ -125,21 +133,21 @@ button[type="submit"]:hover {
 
 .video-background {
     position: relative;
-    height: 100vh;
+    /* height: 100vh; */
     /* Full viewport height */
     overflow: hidden;
     /* Hide overflow */
 }
 
 .video-background video {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: 1;
+    z-index: -1;
     /* Behind the overlay */
     transform: translate(-50%, -50%);
     /* Center the video */
@@ -153,28 +161,24 @@ button[type="submit"]:hover {
     height: 100%;
     background: rgba(255, 252, 236, 0.075);
     /* Adjust opacity */
-    z-index: 2;
+    z-index: -1;
     /* In front of the video */
 }
 
 .short-welcome {
     text-align: center;
-    margin-top: 16%;
-    margin-left: 50%;
+    margin-left: 20%;
     margin-right: 6%;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 400;
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    background: linear-gradient(to top, rgba(255, 251, 243, 0.927), rgb(255, 212, 119));
-    transform: translatey(0);
+    background: linear-gradient(to top, rgba(255, 251, 243, 0.481), rgba(255, 191, 53, 0.727));
     border-radius: 5%;
-    animation: float 6s ease-in-out infinite;
-    padding: 30px;
-    padding-bottom: 20px;
-    transform: translatey(0);
-    animation: float 6s ease-in-out infinite;
+    padding: 40px;
+    padding-bottom: 30px;
+    /* box-shadow: 0px -1px 100px 0px rgba(255, 211, 130, 0.528); */
 }
 
 @keyframes float {
@@ -191,4 +195,36 @@ button[type="submit"]:hover {
         transform: translateY(0);
         /* Return to original position */
     }
+}
+
+.welcome {
+    display: flex;
+    margin-top: 16%;
+}
+
+.image img {
+    height: 400px;
+    width: 475px;
+    margin-left: 30%;
+    transform: translatey(0);
+    animation: float 6s ease-in-out infinite;
+    padding-top: 40px;
+}
+
+.Odisha {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 55%;
+    padding: 2% 4%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: linear-gradient(to top, rgba(63, 63, 63, 0.525), rgb(27, 27, 27));
+    opacity: 0.1 rgba(255, 255, 255, 0.747);
+    border-radius: 25px;
+    color: white;
+
+}
+
+.Odisha h1 {
+    text-decoration: underline solid rgb(255, 255, 255);
 }
