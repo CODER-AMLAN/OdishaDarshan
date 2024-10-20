@@ -279,7 +279,8 @@ li img {
     /* Initially hidden */
 }
 
-.toggle-button {
+.toggle-button,
+.cuisine-toggle-button {
     background-color: #26841a;
     /* Example button color, customize as needed */
     color: white;
@@ -290,4 +291,64 @@ li img {
     font-size: medium;
     cursor: pointer;
     border-radius: 19px;
+}
+
+
+
+/* Cuisine Section */
+.cuisine-content {
+    display: none;
+    /* Hidden by default */
+}
+
+.toggle-button:hover,
+.cuisine-toggle-button:hover {
+    background-color: #1c580a;
+}
+
+/* Styling the list of items */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+/* Image styling */
+.top-cuisines img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.top-cuisines h2 {
+    text-decoration: underline solid rgb(0, 0, 0);
+    margin-left: 0.1%;
+    margin-top: 1%;
+
+}
+
+.top-cuisines h3 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.top-cuisines {
+    text-align: left;
+    margin-top: 3%;
+    border-radius: 30px;
+    color: black;
+    background-color: rgba(255, 227, 150, 0.705);
+    padding: 25px 50px;
+}
+
+
+.top-cuisines,
+.top-spots {
+    border: #e78e09 15px solid;
+    box-shadow: 0px 0px 120px 0px rgba(189, 189, 189, 0.377);
 }
