@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blanchedalmond;
+}
+
+#goBack {
+    margin-top: 12%;
+    margin-left: 3%;
+    font-size: 20px;
+    background-color: rgba(255, 138, 4, 0.402);
+    padding: 12px;
+    border-radius: 30%;
+    transition: all 0.8s ease;
+}
+
+#goBack:hover {
+    transition: all 0.8s ease;
+    background-color: #fd8c2a;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline solid 3px;
+}
+
+.card img {
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.START {
+    background-color: blanchedalmond;
+    margin-bottom: 60px;
+}
+
+.start {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    /* Adjusts spacing between the cards */
+}
+
+.card {
+    font-size: 15px;
+    flex-basis: calc(33.333% - 90px);
+    /* 3 cards per row */
+    margin-bottom: 20px;
+    border-radius: 20px;
+    margin: 20px 40px;
+    /* Add space between rows */
+    /* Optional: Adds shadow to each card */
+    padding: 25px;
+    background-color: rgb(254, 254, 255);
+    border: 1px solid #ccc;
+    /* Optional: Adds border to each card */
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 1px 1px 10px 0.1px rgba(255, 166, 0, 0.808);
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    /* Lifts and slightly enlarges the card */
+    box-shadow: 0 8px 16px rgba(255, 166, 0, 0.808);
+    /* Adds a deeper shadow on hover */
+}
+
+header {
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 4;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 10px 90px 20px rgba(142, 120, 101, 0.696);
+    position: fixed;
+    height: 100px;
+}
+
+.logo {
+    /* font from google */
+    font-size: 40px;
+    font-weight: 1000;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    /* styling */
+    margin-left: 40%;
+    position: fixed;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+/* footer {
+    height: 40px;
+    font-size: 20px;
+    padding-bottom: 9%;
+    padding-top: 2%;
+    background-color: rgba(var(--bs-dark-rgb));
+    ;
+} */
