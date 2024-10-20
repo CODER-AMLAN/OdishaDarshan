@@ -28,11 +28,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
-
-
 const toggleBtn = document.getElementById('toggleSidebar');
 const sidebar = document.querySelector('.sidebar');
 
+// Set the sidebar to be collapsed on initial load
+sidebar.classList.add('collapsed');
+toggleBtn.textContent = ' >> '; // Set the toggle button to the collapsed icon
+
+// Toggle the sidebar state on button click
 toggleBtn.addEventListener('click', () => {
     sidebar.classList.toggle('collapsed');
 
@@ -43,6 +46,7 @@ toggleBtn.addEventListener('click', () => {
         toggleBtn.textContent = ' << '; // Show expand icon when expanded
     }
 });
+
 // Show/hide the city input section when Local Travel Guide button is clicked
 const localTravelGuideBtn = document.getElementById('localTravelGuideBtn');
 const cityInput = document.getElementById('cityInput');
