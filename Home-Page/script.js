@@ -28,3 +28,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+
+const toggleBtn = document.getElementById('toggleSidebar');
+const sidebar = document.querySelector('.sidebar');
+
+toggleBtn.addEventListener('click', () => {
+    sidebar.classList.toggle('collapsed');
+
+    // Change button text based on sidebar state
+    if (sidebar.classList.contains('collapsed')) {
+        toggleBtn.textContent = ' >> '; // Show collapse icon when collapsed
+    } else {
+        toggleBtn.textContent = ' << '; // Show expand icon when expanded
+    }
+});
+// Show/hide the city input section when Local Travel Guide button is clicked
+const localTravelGuideBtn = document.getElementById('localTravelGuideBtn');
+const cityInput = document.getElementById('cityInput');
+
+localTravelGuideBtn.addEventListener('click', function () {
+    cityInput.style.display = cityInput.style.display === 'none' ? 'block' : 'none';
+});
