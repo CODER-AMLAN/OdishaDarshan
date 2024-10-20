@@ -241,6 +241,8 @@ button[type="submit"]:hover {
 
 .top-spots h2 {
     text-decoration: underline solid rgb(0, 0, 0);
+    margin-left: 3%;
+    margin-top: 1%;
 }
 
 .top-spots h3 {
@@ -259,4 +261,33 @@ li img {
 
 .desc {
     font-size: 20px;
+}
+
+
+
+
+.top-spots {
+    border: 1px solid #ccc;
+    /* Just an example, change as needed */
+    padding: 10px;
+    margin: 10px 0;
+    padding-bottom: 4px;
+}
+
+.content {
+    display: none;
+    /* Initially hidden */
+}
+
+.toggle-button {
+    background-color: #26841a;
+    /* Example button color, customize as needed */
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-left: 50%;
+    margin-bottom: 2%;
+    font-size: medium;
+    cursor: pointer;
+    border-radius: 19px;
 }
