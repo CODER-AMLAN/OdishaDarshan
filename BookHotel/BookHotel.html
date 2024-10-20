@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels In Bhubaneswar</title>
+    <link rel="stylesheet" href="BookHotel.css">
+</head>
+<body>
+    <header>
+        <h1>Hotels In Bhubaneswar</h1>
+        <div class="filters">
+            <select id="price-range">
+                <option value="all">All Prices</option>
+                <option value="0-3000">Under 3,000</option>
+                <option value="3000-6000">₹3,000 - ₹6,000</option>
+                <option value="6000-10000">₹6000 - ₹10,000</option>
+                <option value="10000+">Above ₹10,000</option>
+            </select>
+            <input type="date" id="check-in" placeholder="Check-in">
+            <input type="date" id="check-out" placeholder="Check-out">
+            <button id="search-btn">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="hotel-list" class="hotel-list"></div>
+    </main>
+
+    <script src="BookHotel.js"></script>
+</body>
+</html>
